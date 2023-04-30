@@ -10,5 +10,6 @@ Create your own AR.js marker here: https://jeromeetienne.github.io/AR.js/three.j
 
 My markers are located in <b>assets/patters</b> folder.
 
+## JS Library
 
 A-Frame P5 AR library is used to develop this website. You may view the library here: https://cims.nyu.edu/~kapp/aframep5-ar/.
