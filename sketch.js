@@ -81,7 +81,7 @@ function setup() {
     fireplace_marker.add(fireplace_text);
 
     var footsteps_text = new Text({
-        text: 'Footsteps\nHeavy footsteps across a wood floor',
+        text: 'Footsteps\nFootsteps across a wood floor',
         font: 'https://cdn.aframe.io/fonts/mozillavr.fnt',
         red: 250, green: 250, blue: 250,
         side: 'double',
