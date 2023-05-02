@@ -59,7 +59,7 @@ function setup() {
     piano_marker = world.getMarker('piano');
 
     var diningtable_text = new Text({
-        text: 'Dining Table',
+        text: 'Dining Table\nPeople dining at a small table',
         font: 'https://cdn.aframe.io/fonts/mozillavr.fnt',
         red: 250, green: 250, blue: 250,
         side: 'double',
@@ -70,7 +70,7 @@ function setup() {
     diningtable_marker.add(diningtable_text);
 
     var fireplace_text = new Text({
-        text: 'Fireplace',
+        text: 'Fireplace\nCrackling fire in a fireplace',
         font: 'https://cdn.aframe.io/fonts/mozillavr.fnt',
         red: 250, green: 250, blue: 250,
         side: 'double',
@@ -81,7 +81,7 @@ function setup() {
     fireplace_marker.add(fireplace_text);
 
     var footsteps_text = new Text({
-        text: 'Footsteps',
+        text: 'Footsteps\nHeavy footsteps across a wood floor',
         font: 'https://cdn.aframe.io/fonts/mozillavr.fnt',
         red: 250, green: 250, blue: 250,
         side: 'double',
@@ -92,7 +92,7 @@ function setup() {
     footsteps_marker.add(footsteps_text);
 
     gametable_text = new Text({
-        text: 'Game Table',
+        text: 'Game Table\nPeople playing a card game',
         font: 'https://cdn.aframe.io/fonts/mozillavr.fnt',
         red: 250, green: 250, blue: 250,
         side: 'double',
@@ -103,7 +103,7 @@ function setup() {
     gametable_marker.add(gametable_text);
 
     var piano_text = new Text({
-        text: 'Piano',
+        text: 'Piano\nGentle harpsichord melody',
         font: 'https://cdn.aframe.io/fonts/mozillavr.fnt',
         red: 250, green: 250, blue: 250,
         side: 'double',
@@ -186,7 +186,7 @@ function draw() {
         murmuring.stop();
 
         mode = 0;
-        gametable_text.setText("Game Table");
+        gametable_text.setText("Game Table\nPeople playing a card game");
         playing = "";
     }
 }
@@ -209,27 +209,27 @@ function mouseClicked() {
         
         if (mode == 0) {
             gameTable_sound.play();
-            gametable_text.setText("Game Table");
+            gametable_text.setText("Game Table\nPeople playing a card game");
         }
         else if (mode == 1) {
             chair_slide.play();
-            gametable_text.setText("Game Table\nChair Sliding");
+            gametable_text.setText("Game Table\nCreaking wooden chair");
         }
         else if (mode == 2) {
             chair_sit.play();
-            gametable_text.setText("Game Table\nSitting");
+            gametable_text.setText("Game Table\nSitting in a wooden chair");
         }
         else if (mode == 3) {
             game_token.play();
-            gametable_text.setText("Game Table\nGame Token Jingling");
+            gametable_text.setText("Game Table\nTinkling of small game tokens");
         }
         else if (mode == 4) {
             pour_wine.play();
-            gametable_text.setText("Game Table\nWine Pouring");
+            gametable_text.setText("Game Table\nWine pouring");
         }
         else if (mode == 5) {
             play_cards.play();
-            gametable_text.setText("Game Table\nPlaying Cards");
+            gametable_text.setText("Game Table\nShuffling playing cards");
         }
         else if (mode == 6) {
             murmuring.play();
